@@ -6,6 +6,16 @@ export default function QueryProcessor(query: string): string {
       "writer in the English language and the world's pre-eminent dramatist."
     );
   }
+  if (query.toLowerCase().includes("soccer")) {
+    return (
+      "football is the best sport in the world"
+    );
+  }
+  if (query.toLowerCase().includes("name")) {
+    return (
+      "My name is Kareem"
+    );
+  }
 
   return "";
 }

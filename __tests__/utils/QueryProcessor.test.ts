@@ -17,4 +17,12 @@ describe("QueryProcessor", () => {
             "writer in the English language and the world's pre-eminent dramatist."
           ));
     });
+
+    test('should return football description', () => {
+        const query = "soccer";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe((
+            "football is the best sport in the world"
+          ));
+    });
 });
